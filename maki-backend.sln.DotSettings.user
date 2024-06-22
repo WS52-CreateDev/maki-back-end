@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8aaf1fd4_002Dcdd3_002D4b89_002D9762_002D4743cdd57f88/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ProductApplicationUnitTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::74C26E9E-9DDE-4358-933F-CAFC9A1940A5::net7.0::Maki.Application.Test.Product.ProductApplicationUnitTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::467A564A-821A-405D-90B5-B387AD2C648D::net7.0::Maki.Presentation.Test.ProductControllerUnitTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::467A564A-821A-405D-90B5-B387AD2C648D::net7.0::Maki.Presentation.Test.CategoryControllerUnitTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -41,12 +41,10 @@ public class CategoryControllerUnitTest
         var mockMapper = new Mock<IMapper>();
         var mockCategoryQueryService = new Mock<ICategoryQueryService>();
         var mockCategoryCommandService = new Mock<ICategoryCommandService>();
-
-        var fakeList = new List<CategoryResponse>()
-        {
-            new CategoryResponse()
-        };
   
+        var fakeList = new List<CategoryResponse>();
+        mockCategoryQueryService.Setup(p=>p.Handle(new GetAllCategoriesQuery())).ReturnsAsync(fakeList);
+        
         var controller = new CategoryController(mockCategoryCommandService.Object, mockCategoryQueryService.Object, mockMapper.Object);
 
         //Act
