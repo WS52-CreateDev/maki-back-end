@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lwjy5hbqy/FU/Vionoc4JleQHyyb3QjCz0JLhmHm0TMcPjWgAwyll32uCWMtFiU174K5Oh4XBM6HU2ZLw0XkMg==",
+  "dgSpecHash": "EUML6/YlcQK37yeugVnHOg7MO+9nvXuKFuq4pXRD7BxvckvJsHKHl8y2fMozrXXwmKat+cEGOUAsGRqbIe2kkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Shared\\Maki.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

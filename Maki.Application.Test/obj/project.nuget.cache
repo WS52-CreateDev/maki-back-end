@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PzEt9xu0ms90iwl3JA84CdsIqQWODvvB0Ky+IVzRLqXJdn2lZRbNS7Bgrv+iXMQ0aS3AWLvUKbh0eHnpROG8gw==",
+  "dgSpecHash": "XkXM8bwno93HgDYtzcP3LCy9++SfZzfbZej4kUzYlF7lt7uwwuC8GaT1/3yfJTdwQYjPIR3gRqyp3ponN5QH2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Application.Test\\Maki.Application.Test.csproj",
+  "projectFilePath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application.Test\\Maki.Application.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alejandra\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Alejandra\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

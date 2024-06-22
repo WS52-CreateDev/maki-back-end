@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Maki.Domain.IAM.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Maki.Infrastructure.Shared.Contexts;
 
@@ -14,6 +15,8 @@ public class MakiContext : DbContext
         
     }
     
+    public DbSet<User> Users { get; set; }
+    
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
@@ -23,4 +26,10 @@ public class MakiContext : DbContext
         }
     }
 
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+        
+        builder.Entity<User>().ToTable("User");
+    }
 }
