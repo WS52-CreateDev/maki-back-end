@@ -17,4 +17,16 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Mapper\" />
+      <Folder Include="Product\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Maki.Application\Maki.Application.csproj" />
+      <ProjectReference Include="..\Maki.Domain\Maki.Domain.csproj" />
+      <ProjectReference Include="..\Maki.Infrastructure\Maki.Infrastructure.csproj" />
+      <ProjectReference Include="..\Maki.Shared\Maki.Shared.csproj" />
+    </ItemGroup>
+
 </Project>
