@@ -24,4 +24,11 @@
         </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Maki.Application\Maki.Application.csproj" />
+      <ProjectReference Include="..\Maki.Domain\Maki.Domain.csproj" />
+      <ProjectReference Include="..\Maki.Infrastructure\Maki.Infrastructure.csproj" />
+      <ProjectReference Include="..\Maki.Shared\Maki.Shared.csproj" />
+    </ItemGroup>
+
 </Project>
