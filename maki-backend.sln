@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maki.Presentation", "Maki.Presentation\Maki.Presentation.csproj", "{C014D6B1-3DC9-4C23-8278-DE9BBD74AC4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maki.Application", "Maki.Application\Maki.Application.csproj", "{EE074748-1EFA-4503-8831-45C7589D2259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maki.Application.Test", "Maki.Application.Test\Maki.Application.Test.csproj", "{74C26E9E-9DDE-4358-933F-CAFC9A1940A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maki.Domain", "Maki.Domain\Maki.Domain.csproj", "{7AE1CEF9-778D-4E48-864E-C5CA3C363435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maki.Infrastructure", "Maki.Infrastructure\Maki.Infrastructure.csproj", "{6C0EF869-2971-492D-9397-B248CF8B1EAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maki.Shared", "Maki.Shared\Maki.Shared.csproj", "{206CC328-2785-4925-B102-24AB11CD44C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maki.Presentation.Test", "Maki.Presentation.Test\Maki.Presentation.Test.csproj", "{467A564A-821A-405D-90B5-B387AD2C648D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C014D6B1-3DC9-4C23-8278-DE9BBD74AC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C014D6B1-3DC9-4C23-8278-DE9BBD74AC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C014D6B1-3DC9-4C23-8278-DE9BBD74AC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C014D6B1-3DC9-4C23-8278-DE9BBD74AC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE074748-1EFA-4503-8831-45C7589D2259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE074748-1EFA-4503-8831-45C7589D2259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE074748-1EFA-4503-8831-45C7589D2259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE074748-1EFA-4503-8831-45C7589D2259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C26E9E-9DDE-4358-933F-CAFC9A1940A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C26E9E-9DDE-4358-933F-CAFC9A1940A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C26E9E-9DDE-4358-933F-CAFC9A1940A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C26E9E-9DDE-4358-933F-CAFC9A1940A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE1CEF9-778D-4E48-864E-C5CA3C363435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE1CEF9-778D-4E48-864E-C5CA3C363435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE1CEF9-778D-4E48-864E-C5CA3C363435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE1CEF9-778D-4E48-864E-C5CA3C363435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0EF869-2971-492D-9397-B248CF8B1EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0EF869-2971-492D-9397-B248CF8B1EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0EF869-2971-492D-9397-B248CF8B1EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0EF869-2971-492D-9397-B248CF8B1EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206CC328-2785-4925-B102-24AB11CD44C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206CC328-2785-4925-B102-24AB11CD44C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206CC328-2785-4925-B102-24AB11CD44C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206CC328-2785-4925-B102-24AB11CD44C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467A564A-821A-405D-90B5-B387AD2C648D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467A564A-821A-405D-90B5-B387AD2C648D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467A564A-821A-405D-90B5-B387AD2C648D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467A564A-821A-405D-90B5-B387AD2C648D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
