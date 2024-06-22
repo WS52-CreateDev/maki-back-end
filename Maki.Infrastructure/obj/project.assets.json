@@ -301,6 +301,26 @@
             "related": ".xml"
           }
         }
+      },
+      "Maki.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Maki.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maki.Domain.dll": {}
+        }
+      },
+      "Maki.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Maki.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maki.Shared.dll": {}
+        }
       }
     }
   },
@@ -797,12 +817,24 @@
         "pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
+    },
+    "Maki.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Maki.Domain/Maki.Domain.csproj",
+      "msbuildProject": "../Maki.Domain/Maki.Domain.csproj"
+    },
+    "Maki.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Maki.Shared/Maki.Shared.csproj",
+      "msbuildProject": "../Maki.Shared/Maki.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "Maki.Domain >= 1.0.0",
+      "Maki.Shared >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.19",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
     ]
@@ -813,11 +845,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
       "projectName": "Maki.Infrastructure",
-      "projectPath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -831,7 +863,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj"
+            },
+            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

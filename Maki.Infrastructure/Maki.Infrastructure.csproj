@@ -13,4 +13,13 @@
       <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Product\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Maki.Domain\Maki.Domain.csproj" />
+      <ProjectReference Include="..\Maki.Shared\Maki.Shared.csproj" />
+    </ItemGroup>
+
 </Project>
