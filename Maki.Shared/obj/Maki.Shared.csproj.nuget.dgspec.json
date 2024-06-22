@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {}
+    "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
+    "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
         "projectName": "Maki.Shared",
-        "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
+        "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
         "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"

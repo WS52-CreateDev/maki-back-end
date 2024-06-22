@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qKyz17y3NUZKgWOG56ongv6LWeAi60wpO8WpnaSNJjpkUCktdygWEJk+9puTAjzQb1AJsHUj07MR4yEmbPmQ5w==",
+  "dgSpecHash": "nIW7g6YSS7kSn0sxvbeMtDv3zYX7xjQ5omQdo6eYR90Jw7lyCTdXT8YXnKanO2LN9uGF7Cs1rLCsKf4QFLB09A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Presentation.Test\\Maki.Presentation.Test.csproj",
+  "projectFilePath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Presentation.Test\\Maki.Presentation.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alejandra\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Alejandra\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

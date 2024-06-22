@@ -1,4 +1,5 @@
-﻿using Maki.Domain.Product.Models.Aggregates;
+﻿using Maki.Domain.IAM.Models.Entities;
+using Maki.Domain.Product.Models.Aggregates;
 using Maki.Domain.Product.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,7 +19,7 @@ public class MakiContext : DbContext
     
     public DbSet<ProductA> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
-
+    public DbSet<User> Users { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
@@ -38,6 +39,8 @@ public class MakiContext : DbContext
             .HasOne(p => p.Category)
             .WithMany(c => c.Products)
             .HasForeignKey(p => p.CategoryId);
+        
+        builder.Entity<User>().ToTable("User");
     }
 
 }

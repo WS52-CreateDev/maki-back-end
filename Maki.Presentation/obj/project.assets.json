@@ -11117,11 +11117,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Presentation\\Maki.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Presentation\\Maki.Presentation.csproj",
       "projectName": "Maki.Presentation",
-      "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Presentation\\Maki.Presentation.csproj",
+      "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Presentation\\Maki.Presentation.csproj",
       "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -11136,17 +11136,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application\\Maki.Application.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application\\Maki.Application.csproj"
+            "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Application\\Maki.Application.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Application\\Maki.Application.csproj"
             },
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj"
+            "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj"
             },
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj"
+            "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj"
             },
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj"
+            "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj"
             }
           }
         }
