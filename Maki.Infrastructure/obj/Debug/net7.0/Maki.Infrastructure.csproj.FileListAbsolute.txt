@@ -32,3 +32,20 @@ C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Infrastructure\obj\Debug\net
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\refint\Maki.Infrastructure.dll
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.pdb
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\ref\Maki.Infrastructure.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\bin\Debug\net7.0\Maki.Infrastructure.deps.json
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\bin\Debug\net7.0\Maki.Infrastructure.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\bin\Debug\net7.0\Maki.Infrastructure.pdb
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\bin\Debug\net7.0\Maki.Domain.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\bin\Debug\net7.0\Maki.Shared.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\bin\Debug\net7.0\Maki.Domain.pdb
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\bin\Debug\net7.0\Maki.Shared.pdb
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.csproj.AssemblyReference.cache
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.AssemblyInfoInputs.cache
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.AssemblyInfo.cs
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.csproj.CoreCompileInputs.cache
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.csproj.CopyComplete
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\refint\Maki.Infrastructure.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\Maki.Infrastructure.pdb
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Infrastructure\obj\Debug\net7.0\ref\Maki.Infrastructure.dll
