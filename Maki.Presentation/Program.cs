@@ -1,11 +1,16 @@
 using maki_backend.Middleware;
+using Maki.Application.Customer.CommandServices;
+using Maki.Application.Customer.QueryServices;
 using Maki.Application.IAM.CommandServices;
 using Maki.Application.Product.CommandServices;
 using Maki.Application.Product.QueryServices;
+using Maki.Domain.Customer.Repositories;
+using Maki.Domain.Customer.Services;
 using Maki.Domain.IAM.Repositories;
 using Maki.Domain.IAM.Services;
 using Maki.Domain.Product.Repositories;
 using Maki.Domain.Product.Services;
+using Maki.Infrastructure.Customer.Persistence;
 using Maki.Infrastructure.IAM.Persistence;
 using Maki.Infrastructure.Product.Persistence;
 using Maki.Infrastructure.Shared.Contexts;
@@ -41,6 +46,11 @@ builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IUserCommandService,UserCommandService>();
 builder.Services.AddScoped<IEncryptService,EncryptService>();
 builder.Services.AddScoped<ITokenService,TokenService>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerCommandService, CustomerCommandService>();
+builder.Services.AddScoped<ICustomerQueryService, CustomerQueryService>();
+
+
 
 //automapper
 builder.Services.AddAutoMapper(

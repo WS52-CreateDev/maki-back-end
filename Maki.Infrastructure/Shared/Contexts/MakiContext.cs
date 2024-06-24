@@ -19,13 +19,14 @@ public class MakiContext : DbContext
     
     public DbSet<ProductA> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
+    public DbSet<Domain.Customer.Models.Queries.Customer> Customers { get; set; }
     public DbSet<User> Users { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
         {
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
-            optionsBuilder.UseMySql("Server=viaduct.proxy.rlwy.net;Port=44024;Uid=root;Pwd=pmXLiWDTzdknUihnksNXaTcdKbLSnBYe;Database=MakiDB;", serverVersion);
+            optionsBuilder.UseMySql("Server=127.0.0.1,3306;Uid=root;Pwd=1234;Database=Maki;", serverVersion);
         }
     }
 
@@ -34,6 +35,7 @@ public class MakiContext : DbContext
         base.OnModelCreating(builder);
         builder.Entity<ProductA>().ToTable("Product");
         builder.Entity<Category>().ToTable("Category");
+        builder.Entity<Domain.Customer.Models.Queries.Customer>().ToTable("Customer");
         
         builder.Entity<ProductA>()
             .HasOne(p => p.Category)

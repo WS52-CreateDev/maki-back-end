@@ -20,3 +20,14 @@ C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Domain\obj\Debug\net7.0\refint\Maki.Domain.dll
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki.Domain.pdb
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Domain\obj\Debug\net7.0\ref\Maki.Domain.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\bin\Debug\net7.0\Maki.Domain.deps.json
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\bin\Debug\net7.0\Maki.Domain.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\bin\Debug\net7.0\Maki.Domain.pdb
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki.Domain.AssemblyInfoInputs.cache
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki.Domain.AssemblyInfo.cs
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki.Domain.csproj.CoreCompileInputs.cache
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki.Domain.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\refint\Maki.Domain.dll
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\Maki.Domain.pdb
+C:\SEPTIMO CICLO\APLICACIONES WEB\TRABAJOS\TF\maki-back-end\Maki.Domain\obj\Debug\net7.0\ref\Maki.Domain.dll
