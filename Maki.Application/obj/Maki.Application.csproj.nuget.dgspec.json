@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Application\\Maki.Application.csproj": {}
+    "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Application\\Maki.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Application\\Maki.Application.csproj": {
+    "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Application\\Maki.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Application\\Maki.Application.csproj",
+        "projectUniqueName": "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Application\\Maki.Application.csproj",
         "projectName": "Maki.Application",
-        "projectPath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Application\\Maki.Application.csproj",
-        "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Application\\obj\\",
+        "projectPath": "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Application\\Maki.Application.csproj",
+        "packagesPath": "C:\\Users\\ANTONELLA\\.nuget\\packages\\",
+        "outputPath": "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ANTONELLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Alejandra\\.dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.409\\RuntimeIdentifierGraph.json"
         }
       }
     }

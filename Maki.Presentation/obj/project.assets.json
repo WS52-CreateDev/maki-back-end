@@ -10821,24 +10821,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alejandra\\.nuget\\packages\\": {}
+    "C:\\Users\\ANTONELLA\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Presentation\\Maki.Presentation.csproj",
+      "projectUniqueName": "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Presentation\\Maki.Presentation.csproj",
       "projectName": "Maki.Presentation",
-      "projectPath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Presentation\\Maki.Presentation.csproj",
-      "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alejandra\\Documents\\C#\\maki-backend\\maki-backend\\Maki.Presentation\\obj\\",
+      "projectPath": "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Presentation\\Maki.Presentation.csproj",
+      "packagesPath": "C:\\Users\\ANTONELLA\\.nuget\\packages\\",
+      "outputPath": "C:\\SEPTIMO CICLO\\APLICACIONES WEB\\TRABAJOS\\TF\\maki-back-end\\Maki.Presentation\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ANTONELLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10905,7 +10913,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Alejandra\\.dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.409\\RuntimeIdentifierGraph.json"
       }
     }
   }
