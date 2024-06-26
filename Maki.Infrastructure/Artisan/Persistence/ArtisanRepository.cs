@@ -30,6 +30,11 @@ public class ArtisanRepository: IArtisanRepository
             .FirstOrDefaultAsync(a => a.Email == email && a.Password == password);
     }
 
+    public async Task<ArtisanA> GetByEmailAsync(string email)
+    {
+        return await _makiContext.Artisans.FirstOrDefaultAsync(a => a.Email == email);
+    }
+
     public async Task<bool> UpdateAsync(ArtisanA artisan)
     {
         var existingArtisan = await _makiContext.Artisans.FindAsync(artisan.Id);

@@ -26,6 +26,9 @@ public class ArtisanCommandService : IArtisanCommandService
         var existingArtisan = await _artisanRepository.GetByEmailAndPasswordAsync(artisan.Email, artisan.Password);
         if (existingArtisan != null) throw new DuplicateNameException("Artisan already exists");
 
+        var age = artisan.Age;
+        if (age < 18) throw new InvalidOperationException("Age is over 18");
+
         var result = await _artisanRepository.SaveAsync(artisan);
         return result.Id;
     }
@@ -43,7 +46,18 @@ public class ArtisanCommandService : IArtisanCommandService
         var existingArtisan = await _artisanRepository.GetByIdAsync(command.Id);
         if (existingArtisan == null) throw new KeyNotFoundException("Artisan not found");
 
+        
+        var artisanWithEmail = await _artisanRepository.GetByEmailAsync(command.Email);
+        if (artisanWithEmail != null && artisanWithEmail.Id != command.Id)
+        {
+            throw new InvalidOperationException("Email already exists");
+        }
+
         var artisan = _mapper.Map<UpdateArtisanCommand, ArtisanA>(command);
+
+        var age = artisan.Age;
+        if (age < 18) throw new InvalidOperationException("Age is over 18");
+        
         return await _artisanRepository.UpdateAsync(artisan);
 
     }
