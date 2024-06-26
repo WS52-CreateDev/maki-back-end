@@ -25,7 +25,7 @@ public class MakiContext : DbContext
         if (!optionsBuilder.IsConfigured)
         {
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
-            optionsBuilder.UseMySql("Server=viaduct.proxy.rlwy.net;Port=44024;Uid=root;Pwd=pmXLiWDTzdknUihnksNXaTcdKbLSnBYe;Database=MakiDB;", serverVersion);
+            optionsBuilder.UseMySql("Server=viaduct.proxy.rlwy.net;Port=47612;Uid=root;Pwd=WrHwkuqBdVMYrhNMPQmDpIfeihOaKugh;Database=MakiDB;", serverVersion);
         }
     }
 

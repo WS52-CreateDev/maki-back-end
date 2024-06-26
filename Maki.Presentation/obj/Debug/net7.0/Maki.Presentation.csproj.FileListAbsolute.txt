@@ -486,3 +486,7 @@ C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Presentation\obj\Debug\net7.
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Presentation\obj\Debug\net7.0\Maki.Presentation.pdb
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Presentation\obj\Debug\net7.0\Maki.Presentation.genruntimeconfig.cache
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Presentation\obj\Debug\net7.0\ref\Maki.Presentation.dll
+C:\Users\Alejandra\Documents\GitHub\maki-back-end\Maki.Presentation\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Alejandra\Documents\GitHub\maki-back-end\Maki.Presentation\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Alejandra\Documents\GitHub\maki-back-end\Maki.Presentation\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Alejandra\Documents\GitHub\maki-back-end\Maki.Presentation\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

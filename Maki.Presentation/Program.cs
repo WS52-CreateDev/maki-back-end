@@ -1,5 +1,10 @@
+using System.Reflection;
+using System.IO;
+using System.Reflection;
+using System.Xml.Linq;
 using maki_backend.Middleware;
 using Maki.Application.IAM.CommandServices;
+using Maki.Application.IAM.QueryServices;
 using Maki.Application.Product.CommandServices;
 using Maki.Application.Product.QueryServices;
 using Maki.Domain.IAM.Repositories;
@@ -10,7 +15,9 @@ using Maki.Infrastructure.IAM.Persistence;
 using Maki.Infrastructure.Product.Persistence;
 using Maki.Infrastructure.Shared.Contexts;
 using Maki.Presentation.Mapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,7 +35,58 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "API Management center for Maki",
+        Description = "An ASP.NET Core Web API for managing Maki endpoints",
+        TermsOfService = new Uri("https://example.com/terms"),
+        Contact = new OpenApiContact
+        {
+            Name = "Example Contact",
+            Url = new Uri("https://example.com/contact")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "Example License",
+            Url = new Uri("https://example.com/license")
+        }
+    });
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter token",
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        BearerFormat = "JWT",
+        Scheme = "bearer"
+    });
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Id = "Bearer",
+                    Type = ReferenceType.SecurityScheme
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlFilePath = Path.Combine(AppContext.BaseDirectory, xmlFilename);
+
+    if (!File.Exists(xmlFilePath))
+    {
+        new XDocument(new XElement("Root")).Save(xmlFilePath);
+    }
+    options.IncludeXmlComments(xmlFilePath);
+});
 
 //Dependency injection
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -41,6 +99,7 @@ builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IUserCommandService,UserCommandService>();
 builder.Services.AddScoped<IEncryptService,EncryptService>();
 builder.Services.AddScoped<ITokenService,TokenService>();
+builder.Services.AddScoped<IUserQueryService,UserQueryService>();
 
 //automapper
 builder.Services.AddAutoMapper(
@@ -59,6 +118,10 @@ builder.Services.AddDbContext<MakiContext>(
             ServerVersion.AutoDetect(connectionString)
         );
     });
+
+//Auth
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer();
 
 var app = builder.Build();
 
@@ -80,9 +143,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllers();
+
+app.UseMiddleware<AuthenticationMiddleware>();
 
 app.UseCors("AllowAllPolicy");
 

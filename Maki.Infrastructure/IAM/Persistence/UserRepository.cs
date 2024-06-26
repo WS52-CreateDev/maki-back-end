@@ -27,4 +27,10 @@ public class UserRepository : IUserRepository
         var user = await _makiContext.Users.FirstOrDefaultAsync(x => x.Username == username);
         return user;
     }
+    
+    public async Task<User?> GetUserByIdAsync(int id)
+    {
+        var user = await _makiContext.Users.FirstOrDefaultAsync(x => x.Id == id && x.IsActive);
+        return user;
+    }
 }

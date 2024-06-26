@@ -845,11 +845,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
       "projectName": "Maki.Infrastructure",
-      "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -864,11 +864,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj"
+            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj"
             },
-            "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\RiderProjects\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj"
+            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
+              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj"
             }
           }
         }

@@ -1,9 +1,11 @@
 ﻿using System.Net.Mime;
 using AutoMapper;
+using maki_backend.Filters;
 using Maki.Domain.Product.Models.Commands;
 using Maki.Domain.Product.Models.Queries;
 using Maki.Domain.Product.Models.Response;
 using Maki.Domain.Product.Services;
+using Maki.Shared;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Maki.Presentation.Product.Controllers
@@ -82,34 +84,89 @@ namespace Maki.Presentation.Product.Controllers
         [ProducesResponseType(typeof(void), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(void),StatusCodes.Status500InternalServerError)]
         [Produces(MediaTypeNames.Application.Json)]
+        [CustomAuthorize("artisan", "admin")]
         public async Task<IActionResult> PostAsync([FromBody] CreateProductCommand command)
         {
-            if(!ModelState.IsValid) return BadRequest();
-            var result = await _productCommandService.Handle(command);
-            if (result > 0)
-                return StatusCode(StatusCodes.Status201Created, result);
-            return BadRequest();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Modelo inválido.");
+            }
+            try
+            {
+                var result = await _productCommandService.Handle(command);
+                if (result > 0)
+                {
+                    return StatusCode(StatusCodes.Status201Created, result);
+                }
+                return BadRequest("Error al crear el producto.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized, "No autorizado.");
+            }
+            catch (ForbiddenAccessException)
+            {
+                return StatusCode(StatusCodes.Status403Forbidden, "Su rol de usuario no posee acceso a este recurso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error interno: {ex.Message}");
+            }
         }
 
         //PUT: api/Product/id
         [HttpPut("{id}")]
+        [CustomAuthorize("artisan", "admin")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] UpdateProductCommand command)
         {
             command.Id = id;
             if (!ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest);
-            var result = await _productCommandService.Handle(command);
-            return Ok();
+            try
+            {
+                var result = await _productCommandService.Handle(command);
+                return Ok();
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized, "No autorizado.");
+            }
+            catch (ForbiddenAccessException) 
+            {
+                return StatusCode(StatusCodes.Status403Forbidden, "Su rol de usuario no posee acceso a este recurso.");
+            }
+            catch (Exception ex) 
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error interno: {ex.Message}");
+            }
         }
 
         // DELETE: api/Product/id
         [HttpDelete("{id}")]
+        [CustomAuthorize("artisan", "admin")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
             DeleteProductCommand command = new DeleteProductCommand { Id = id };
-            var result = await _productCommandService.Handle(command);
-            return Ok();
+            try
+            {
+                var result = await _productCommandService.Handle(command);
+                if (result)
+                {
+                    return Ok("Producto eliminado exitosamente.");
+                }
+                return NotFound("Producto no encontrado.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized, "No autorizado.");
+            }
+            catch (ForbiddenAccessException) 
+            {
+                return StatusCode(StatusCodes.Status403Forbidden, "Su rol de usuario no posee acceso a este recurso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error interno: {ex.Message}");
+            }
         }
-        
     }
-    
 }
