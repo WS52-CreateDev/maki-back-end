@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Maki.Domain.Customer.Models.Entities;
+using Maki.Domain.Customer.Models.Response;
 using Maki.Domain.Product.Models.Entities;
 using Maki.Domain.Product.Models.Response;
 using Maki.Domain.DesignRequest.Models.Entities;
@@ -14,5 +16,6 @@ public class ModelsToResponse : Profile
             .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name));;
         CreateMap<Category, CategoryResponse>();
         CreateMap<DesignRequest, DesignRequestResponse>();
+        CreateMap<Customer, CustomerResponse>();
     }
 }

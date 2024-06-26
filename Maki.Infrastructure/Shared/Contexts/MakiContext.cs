@@ -1,4 +1,5 @@
-﻿using Maki.Domain.IAM.Models.Entities;
+﻿using Maki.Domain.Artisan.Models.Aggregates;
+using Maki.Domain.IAM.Models.Entities;
 using Maki.Domain.Product.Models.Aggregates;
 using Maki.Domain.Product.Models.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,8 @@ public class MakiContext : DbContext
     public DbSet<Category> Categories { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Domain.DesignRequest.Models.Entities.DesignRequest> DesignRequests { get; set; }
+    public DbSet<Domain.Customer.Models.Entities.Customer> Customers { get; set; }
+    public DbSet<ArtisanA> Artisans { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
@@ -36,6 +39,8 @@ public class MakiContext : DbContext
         base.OnModelCreating(builder);
         builder.Entity<ProductA>().ToTable("Product");
         builder.Entity<Category>().ToTable("Category");
+        builder.Entity<Domain.Customer.Models.Entities.Customer>().ToTable("Customer");
+        builder.Entity<ArtisanA>().ToTable("Artisan");
         
         builder.Entity<ProductA>()
             .HasOne(p => p.Category)
