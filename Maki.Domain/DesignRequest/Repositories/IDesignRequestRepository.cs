@@ -8,6 +8,7 @@ public interface IDesignRequestRepository
     Task<int> AddDesignRequestAsync(DesignRequest designRequest);
     Task<DesignRequest?> GetDesignRequestByIdAsync(int id);
     Task<List<DesignRequest>> GetAllDesignRequestsAsync();
+    Task<List<DesignRequest>> GetDesignRequestsByUserIdAsync(int userId); // Nuevo método
     Task<bool> UpdateAsync(DesignRequest designRequest, int id);
     Task<bool> DeleteAsync(int id);
 }

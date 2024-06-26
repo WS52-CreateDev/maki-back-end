@@ -6,4 +6,5 @@ public interface IDesignRequestQueryService
 {
     Task<List<DesignRequestResponse>?> Handle(GetAllDesignRequestsQuery query);
     Task<DesignRequestResponse?> Handle(GetDesignRequestByIdQuery query);
+    Task<List<DesignRequestResponse>?> Handle(GetDesignRequestsByUserIdQuery query); // Nuevo método
 }

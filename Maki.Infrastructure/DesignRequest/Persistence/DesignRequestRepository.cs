@@ -38,7 +38,7 @@ public class DesignRequestRepository: IDesignRequestRepository
         public async Task<DesignRequest?> GetDesignRequestByIdAsync(int id)
         {
             return await _makiContext.DesignRequests
-                .Include(dr => dr.User) // Include the related User entity
+                .Include(dr => dr.User)
                 .Where(dr => dr.Id == id && dr.IsActive)
                 .FirstOrDefaultAsync();
         }
@@ -46,8 +46,16 @@ public class DesignRequestRepository: IDesignRequestRepository
         public async Task<List<DesignRequest>> GetAllDesignRequestsAsync()
         {
             return await _makiContext.DesignRequests
-                .Include(dr => dr.User) // Include the related User entity
+                .Include(dr => dr.User)
                 .Where(dr => dr.IsActive)
+                .ToListAsync();
+        }
+
+        public async Task<List<DesignRequest>> GetDesignRequestsByUserIdAsync(int userId)
+        {
+            return await _makiContext.DesignRequests
+                .Include(dr => dr.User)
+                .Where(dr => dr.UserId == userId && dr.IsActive)
                 .ToListAsync();
         }
 
@@ -83,4 +91,5 @@ public class DesignRequestRepository: IDesignRequestRepository
             await _makiContext.SaveChangesAsync();
             return true;
         }
+    
 }

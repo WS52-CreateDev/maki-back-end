@@ -11,13 +11,14 @@ namespace maki_backend.DesignRequest.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DesignRequestController:ControllerBase
+    public class DesignRequestController : ControllerBase
     {
-      private readonly IDesignRequestCommandService _designRequestCommandService;
+        private readonly IDesignRequestCommandService _designRequestCommandService;
         private readonly IDesignRequestQueryService _designRequestQueryService;
         private readonly IMapper _mapper;
 
-        public DesignRequestController(IDesignRequestCommandService designRequestCommandService, IDesignRequestQueryService designRequestQueryService, IMapper mapper)
+        public DesignRequestController(IDesignRequestCommandService designRequestCommandService,
+            IDesignRequestQueryService designRequestQueryService, IMapper mapper)
         {
             _designRequestCommandService = designRequestCommandService;
             _designRequestQueryService = designRequestQueryService;
@@ -104,9 +105,26 @@ namespace maki_backend.DesignRequest.Controllers
             var result = await _designRequestCommandService.Handle(command);
             return Ok();
         }
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetDesignRequestsByUserId(int userId)
+        {
+            try
+            {
+                var result = await _designRequestQueryService.Handle(new GetDesignRequestsByUserIdQuery(userId));
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                Console.WriteLine($"Inner Exception: {ex.InnerException?.Message}");
+                return StatusCode(500, "An error occurred while retrieving the data. See the inner exception for details.");
+            }
+        }
     }
 
+  
     
+
 }
 
 
