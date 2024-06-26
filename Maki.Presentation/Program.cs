@@ -172,12 +172,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();
+app.UseCors("AllowAllPolicy");
 
-app.MapControllers();
+app.UseAuthentication();
 
 app.UseMiddleware<AuthenticationMiddleware>();
 
-app.UseCors("AllowAllPolicy");
+app.UseAuthorization();
+
+app.MapControllers();
 
 app.Run();
