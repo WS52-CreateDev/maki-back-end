@@ -30,13 +30,13 @@ public class ArtisanCommandService : IArtisanCommandService
         return result.Id;
     }
 
-    public async Task<ArtisanResponse> Handle(LogInArtisanCommand command)
-    {
-        var artisan = await _artisanRepository.GetByEmailAndPasswordAsync(command.Email, command.Password);
-        if (artisan == null) throw new UnauthorizedAccessException("Invalid Email");
+        public async Task<ArtisanResponse> Handle(LogInArtisanCommand command)
+        {
+            var artisan = await _artisanRepository.GetByEmailAndPasswordAsync(command.Email, command.Password);
+            if (artisan == null) throw new UnauthorizedAccessException("Invalid Email");
 
-        return _mapper.Map<ArtisanA, ArtisanResponse>(artisan);
-    }
+            return _mapper.Map<ArtisanA, ArtisanResponse>(artisan);
+        }
 
     public async Task<bool> Handle(UpdateArtisanCommand command)
     {

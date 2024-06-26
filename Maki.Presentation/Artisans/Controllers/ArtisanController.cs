@@ -69,6 +69,15 @@ namespace maki_backend.Artisans.Controllers
         }
         
         
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginAsync([FromBody] LogInArtisanCommand command)
+        {
+            if (!ModelState.IsValid) return BadRequest();
+            var result = await _artisanCommandService.Handle(command);
+            if (result == null) return Unauthorized();
+            return Ok(result);
+        }
+        
     }
     
 }

@@ -2,6 +2,7 @@
 
 public class ArtisanResponse
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Surname { get; set; }
     public string Phone { get; set; }
@@ -11,6 +12,7 @@ public class ArtisanResponse
     public int Age { get; set; }
     public string Province { get; set; }
     public string Info { get; set; }
+    public string Password { get; set; }
     public string BusinessName { get; set; }
     public string BusinessAddress { get; set; }
 }
