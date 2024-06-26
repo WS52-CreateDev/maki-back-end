@@ -20,3 +20,14 @@ C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Shared\obj\Debug\net7.0\refint\Maki.Shared.dll
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki.Shared.pdb
 C:\Users\Alejandra\RiderProjects\maki-back-end\Maki.Shared\obj\Debug\net7.0\ref\Maki.Shared.dll
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\bin\Debug\net7.0\Maki.Shared.deps.json
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\bin\Debug\net7.0\Maki.Shared.dll
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\bin\Debug\net7.0\Maki.Shared.pdb
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki.Shared.AssemblyInfoInputs.cache
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki.Shared.AssemblyInfo.cs
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki.Shared.dll
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\refint\Maki.Shared.dll
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\Maki.Shared.pdb
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Shared\obj\Debug\net7.0\ref\Maki.Shared.dll

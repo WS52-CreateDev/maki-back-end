@@ -9,6 +9,8 @@ public class User
     public DateTime? UpdatedDate { get; set; }
     public bool IsActive { get; set; } = true;
     
+    public ICollection<DesignRequest.Models.Entities.DesignRequest> DesignRequests { get; set; } // Navigation property to DesignRequests
+    
     public string Username { get; set; }
     public string PasswordHashed { get; set; }
     public string Role { get; set; }

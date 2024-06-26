@@ -3,6 +3,7 @@ using Maki.Domain.Product.Models.Aggregates;
 using Maki.Domain.Product.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Maki.Infrastructure.Shared.Contexts;
 
 public class MakiContext : DbContext
@@ -20,6 +21,7 @@ public class MakiContext : DbContext
     public DbSet<ProductA> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<User> Users { get; set; }
+    public DbSet<Domain.DesignRequest.Models.Entities.DesignRequest> DesignRequests { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
@@ -41,6 +43,13 @@ public class MakiContext : DbContext
             .HasForeignKey(p => p.CategoryId);
         
         builder.Entity<User>().ToTable("User");
+
+        // DesignRequest to User relationship
+        builder.Entity<Domain.DesignRequest.Models.Entities.DesignRequest>()
+            .ToTable("DesignRequest")
+            .HasOne(dr => dr.User)
+            .WithMany(u => u.DesignRequests)
+            .HasForeignKey(dr => dr.UserId);
     }
 
 }

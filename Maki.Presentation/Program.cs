@@ -2,12 +2,18 @@ using maki_backend.Middleware;
 using Maki.Application.IAM.CommandServices;
 using Maki.Application.Product.CommandServices;
 using Maki.Application.Product.QueryServices;
+using Maki.Application.DesignRequest.CommandServices;
+using Maki.Application.DesignRequest.QueryServices;
+
 using Maki.Domain.IAM.Repositories;
 using Maki.Domain.IAM.Services;
 using Maki.Domain.Product.Repositories;
 using Maki.Domain.Product.Services;
+using Maki.Domain.DesignRequest.Repositories;
+using Maki.Domain.DesignRequest.Services;
 using Maki.Infrastructure.IAM.Persistence;
 using Maki.Infrastructure.Product.Persistence;
+using Maki.Infrastructure.DesignRequest.Persistence;
 using Maki.Infrastructure.Shared.Contexts;
 using Maki.Presentation.Mapper;
 using Microsoft.EntityFrameworkCore;
@@ -37,10 +43,15 @@ builder.Services.AddScoped<IProductQueryService, ProductQueryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryCommandService, CategoryCommandService>();
 builder.Services.AddScoped<ICategoryQueryService, CategoryQueryService>();
-builder.Services.AddScoped<IUserRepository,UserRepository>();
-builder.Services.AddScoped<IUserCommandService,UserCommandService>();
-builder.Services.AddScoped<IEncryptService,EncryptService>();
-builder.Services.AddScoped<ITokenService,TokenService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserCommandService, UserCommandService>();
+builder.Services.AddScoped<IEncryptService, EncryptService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+
+// Add DesignRequest services
+builder.Services.AddScoped<IDesignRequestRepository, DesignRequestRepository>();
+builder.Services.AddScoped<IDesignRequestCommandService, DesignRequestCommandService>();
+builder.Services.AddScoped<IDesignRequestQueryService, DesignRequestQueryService>();
 
 //automapper
 builder.Services.AddAutoMapper(
