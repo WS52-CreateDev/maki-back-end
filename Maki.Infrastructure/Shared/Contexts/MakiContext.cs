@@ -49,12 +49,12 @@ public class MakiContext : DbContext
         
         builder.Entity<User>().ToTable("User");
 
-        // DesignRequest to User relationship
+        // DesignRequest to Artisan relationship
         builder.Entity<Domain.DesignRequest.Models.Entities.DesignRequest>()
             .ToTable("DesignRequest")
-            .HasOne(dr => dr.User)
-            .WithMany(u => u.DesignRequests)
-            .HasForeignKey(dr => dr.UserId);
+            .HasOne(dr => dr.Artisan)
+            .WithMany(a => a.DesignRequests)
+            .HasForeignKey(dr => dr.ArtisanId);
     }
 
 }

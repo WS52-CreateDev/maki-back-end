@@ -22,7 +22,7 @@ public class DesignRequestRepository: IDesignRequestRepository
             _makiContext = makiContext;
         }
 
-        public async Task<int> AddDesignRequestAsync(DesignRequest designRequest)
+          public async Task<int> AddDesignRequestAsync(DesignRequest designRequest)
         {
             var strategy = _makiContext.Database.CreateExecutionStrategy();
             await strategy.ExecuteAsync(async () =>
@@ -38,7 +38,7 @@ public class DesignRequestRepository: IDesignRequestRepository
         public async Task<DesignRequest?> GetDesignRequestByIdAsync(int id)
         {
             return await _makiContext.DesignRequests
-                .Include(dr => dr.User)
+                .Include(dr => dr.Artisan)
                 .Where(dr => dr.Id == id && dr.IsActive)
                 .FirstOrDefaultAsync();
         }
@@ -46,16 +46,16 @@ public class DesignRequestRepository: IDesignRequestRepository
         public async Task<List<DesignRequest>> GetAllDesignRequestsAsync()
         {
             return await _makiContext.DesignRequests
-                .Include(dr => dr.User)
+                .Include(dr => dr.Artisan)
                 .Where(dr => dr.IsActive)
                 .ToListAsync();
         }
 
-        public async Task<List<DesignRequest>> GetDesignRequestsByUserIdAsync(int userId)
+        public async Task<List<DesignRequest>> GetDesignRequestsByArtisanIdAsync(int artisanId)
         {
             return await _makiContext.DesignRequests
-                .Include(dr => dr.User)
-                .Where(dr => dr.UserId == userId && dr.IsActive)
+                .Include(dr => dr.Artisan)
+                .Where(dr => dr.ArtisanId == artisanId && dr.IsActive)
                 .ToListAsync();
         }
 
@@ -70,7 +70,8 @@ public class DesignRequestRepository: IDesignRequestRepository
             existingDesignRequest.Name = designRequest.Name;
             existingDesignRequest.Characteristics = designRequest.Characteristics;
             existingDesignRequest.Photo = designRequest.Photo;
-            existingDesignRequest.UserId = designRequest.UserId;
+            existingDesignRequest.Email = designRequest.Email; // Nuevo campo Email
+            existingDesignRequest.ArtisanId = designRequest.ArtisanId;
             existingDesignRequest.UpdatedDate = designRequest.UpdatedDate;
 
             _makiContext.DesignRequests.Update(existingDesignRequest);

@@ -6,5 +6,6 @@ public class DesignRequestResponse
     public string Name { get; set; }
     public string Characteristics { get; set; }
     public string Photo { get; set; }
-    public int UserId { get; set; }
+    public string Email { get; set; } // Nuevo campo
+    public int ArtisanId { get; set; } // Nuevo campo
 }

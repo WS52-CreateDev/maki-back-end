@@ -46,9 +46,9 @@ public class DesignRequestQueryService: IDesignRequestQueryService
 
         return _mapper.Map<DesignRequest, DesignRequestResponse>(designRequest);
     }
-    public async Task<List<DesignRequestResponse>?> Handle(GetDesignRequestsByUserIdQuery query)
+    public async Task<List<DesignRequestResponse>?> Handle(GetDesignRequestsByArtisanIdQuery query) // Actualizado
     {
-        var data = await _designRequestRepository.GetDesignRequestsByUserIdAsync(query.UserId);
+        var data = await _designRequestRepository.GetDesignRequestsByArtisanIdAsync(query.ArtisanId);
         var result = _mapper.Map<List<DesignRequest>, List<DesignRequestResponse>>(data);
         return result;
     }

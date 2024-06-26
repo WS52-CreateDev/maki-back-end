@@ -6,7 +6,6 @@ using Maki.Domain.DesignRequest.Models.Response;
 using Maki.Domain.DesignRequest.Services;
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace maki_backend.DesignRequest.Controllers
 {
     [Route("api/[controller]")]
@@ -63,7 +62,8 @@ namespace maki_backend.DesignRequest.Controllers
         ///         "name": "string",
         ///         "characteristics": "string",
         ///         "photo": "string",
-        ///         "userId": 0
+        ///         "email": "string",
+        ///         "artisanId": 0
         ///     }
         /// </remarks>
         /// <param name="CreateDesignRequestCommand">The design request to create</param>
@@ -87,7 +87,7 @@ namespace maki_backend.DesignRequest.Controllers
             return BadRequest();
         }
 
-        //PUT: api/DesignRequest/id
+        // PUT: api/DesignRequest/id
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(int id, [FromBody] UpdateDesignRequestCommand command)
         {
@@ -105,12 +105,18 @@ namespace maki_backend.DesignRequest.Controllers
             var result = await _designRequestCommandService.Handle(command);
             return Ok();
         }
-        [HttpGet("user/{userId}")]
-        public async Task<IActionResult> GetDesignRequestsByUserId(int userId)
+
+        // GET: api/DesignRequest/artisan/{artisanId}
+        [HttpGet("artisan/{artisanId}")]
+        public async Task<IActionResult> GetDesignRequestsByArtisanId(int artisanId)
         {
             try
             {
-                var result = await _designRequestQueryService.Handle(new GetDesignRequestsByUserIdQuery(userId));
+                var result = await _designRequestQueryService.Handle(new GetDesignRequestsByArtisanIdQuery(artisanId));
+                if (result == null || result.Count == 0)
+                {
+                    return NotFound();
+                }
                 return Ok(result);
             }
             catch (Exception ex)
@@ -121,11 +127,4 @@ namespace maki_backend.DesignRequest.Controllers
             }
         }
     }
-
-  
-    
-
 }
-
-
-

@@ -36,4 +36,5 @@ public class ArtisanA
     public string BusinessName { get; set; }
     [Required]
     public string BusinessAddress { get; set; }
+    public ICollection<DesignRequest.Models.Entities.DesignRequest> DesignRequests { get; set; }
 }
