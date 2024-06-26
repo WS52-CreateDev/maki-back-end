@@ -3,14 +3,28 @@ using System.IO;
 using System.Reflection;
 using System.Xml.Linq;
 using maki_backend.Middleware;
+using Maki.Application.Artisan.QueryServices;
+using Maki.Application.Customer.CommandServices;
+using Maki.Application.Customer.QueryServices;
+using Maki.Application.DesignRequest.CommandServices;
+using Maki.Application.DesignRequest.QueryServices;
 using Maki.Application.IAM.CommandServices;
 using Maki.Application.IAM.QueryServices;
 using Maki.Application.Product.CommandServices;
 using Maki.Application.Product.QueryServices;
+using Maki.Domain.Artisan.Repositories;
+using Maki.Domain.Artisan.Services;
+using Maki.Domain.Customer.Repositories;
+using Maki.Domain.Customer.Services;
+using Maki.Domain.DesignRequest.Repositories;
+using Maki.Domain.DesignRequest.Services;
 using Maki.Domain.IAM.Repositories;
 using Maki.Domain.IAM.Services;
 using Maki.Domain.Product.Repositories;
 using Maki.Domain.Product.Services;
+using Maki.Infrastructure.Artisan.Persistence;
+using Maki.Infrastructure.Customer.Persistence;
+using Maki.Infrastructure.DesignRequest.Persistence;
 using Maki.Infrastructure.IAM.Persistence;
 using Maki.Infrastructure.Product.Persistence;
 using Maki.Infrastructure.Shared.Contexts;
@@ -92,14 +106,29 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductCommandService, ProductCommandService>();
 builder.Services.AddScoped<IProductQueryService, ProductQueryService>();
+
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryCommandService, CategoryCommandService>();
 builder.Services.AddScoped<ICategoryQueryService, CategoryQueryService>();
+
 builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IUserCommandService,UserCommandService>();
+builder.Services.AddScoped<IUserQueryService,UserQueryService>();
+
 builder.Services.AddScoped<IEncryptService,EncryptService>();
 builder.Services.AddScoped<ITokenService,TokenService>();
-builder.Services.AddScoped<IUserQueryService,UserQueryService>();
+
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerCommandService, CustomerCommandService>();
+builder.Services.AddScoped<ICustomerQueryService, CustomerQueryService>();
+
+builder.Services.AddScoped<IArtisanRepository, ArtisanRepository>();
+builder.Services.AddScoped<IArtisanQueryService, ArtisanQueryService>();
+builder.Services.AddScoped<IArtisanCommandService, ArtisanCommandService>();
+
+builder.Services.AddScoped<IDesignRequestRepository, DesignRequestRepository>();
+builder.Services.AddScoped<IDesignRequestCommandService, DesignRequestCommandService>();
+builder.Services.AddScoped<IDesignRequestQueryService, DesignRequestQueryService>();
 
 //automapper
 builder.Services.AddAutoMapper(
