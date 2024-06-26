@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Maki.Domain.Artisan.Models.Aggregates;
+using Maki.Domain.Artisan.Models.Response;
 using Maki.Domain.Customer.Models.Entities;
 using Maki.Domain.Customer.Models.Response;
 using Maki.Domain.Product.Models.Entities;
@@ -17,5 +19,6 @@ public class ModelsToResponse : Profile
         CreateMap<Category, CategoryResponse>();
         CreateMap<DesignRequest, DesignRequestResponse>();
         CreateMap<Customer, CustomerResponse>();
+        CreateMap<ArtisanA, ArtisanResponse>();
     }
 }

@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Maki.Domain.Artisan.Models.Aggregates;
+using Maki.Domain.Artisan.Models.Commands;
 using Maki.Domain.Customer.Models.Commands;
 using Maki.Domain.Customer.Models.Entities;
 using Maki.Domain.Product.Models.Aggregates;
@@ -20,6 +22,8 @@ public class RequestToModels : Profile
         CreateMap<DeleteDesignRequestCommand, DesignRequest>();
         CreateMap<RegisterCustomerCommand, Customer>();
         CreateMap<UpdateCustomerCommand, Customer>();
+        CreateMap<RegisterArtisanCommand, ArtisanA>();
+        CreateMap<UpdateArtisanCommand, ArtisanA>();
     }
     
 }
