@@ -1,0 +1,3 @@
+C:\Users\Kyaru\Documents\maki-back-end\out\Maki.Domain.dll
+C:\Users\Kyaru\Documents\maki-back-end\out\Maki.Domain.deps.json
+C:\Users\Kyaru\Documents\maki-back-end\out\Maki.Domain.pdb

@@ -1,0 +1,3 @@
+C:\Users\Kyaru\Documents\maki-back-end\out\Maki.Shared.dll
+C:\Users\Kyaru\Documents\maki-back-end\out\Maki.Shared.deps.json
+C:\Users\Kyaru\Documents\maki-back-end\out\Maki.Shared.pdb

@@ -1,0 +1,11 @@
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\bin\Release\net7.0\Maki.Domain.deps.json
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\bin\Release\net7.0\Maki.Domain.dll
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\bin\Release\net7.0\Maki.Domain.pdb
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\Maki.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\Maki.Domain.AssemblyInfoInputs.cache
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\Maki.Domain.AssemblyInfo.cs
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\Maki.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\Maki.Domain.dll
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\refint\Maki.Domain.dll
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\Maki.Domain.pdb
+C:\Users\Kyaru\Documents\maki-back-end\Maki.Domain\obj\Release\net7.0\ref\Maki.Domain.dll
