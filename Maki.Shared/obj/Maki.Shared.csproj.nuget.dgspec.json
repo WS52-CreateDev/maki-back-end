@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {}
+    "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
+    "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
+        "projectUniqueName": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
         "projectName": "Maki.Shared",
-        "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
-        "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\obj\\",
+        "projectPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj",
+        "packagesPath": "C:\\Users\\Jair_\\.nuget\\packages\\",
+        "outputPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Jair_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Alejandra\\.dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,6 +12,6 @@ public class CreateProductCommand
     [Required] public string Height { get; set; }
     [Required] public string Depth { get; set; }
     [Required] public string Material { get; set; }
-    [Required] public int ArtisanId { get; set; }
+     public int ArtisanId { get; set; }
     [Required] public int CategoryId { get; set; }
 }

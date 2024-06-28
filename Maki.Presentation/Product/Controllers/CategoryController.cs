@@ -3,6 +3,7 @@ using maki_backend.Filters;
 using Maki.Domain.Product.Models.Commands;
 using Maki.Domain.Product.Models.Queries;
 using Maki.Domain.Product.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Maki.Presentation.Product.Controllers
@@ -24,6 +25,7 @@ namespace Maki.Presentation.Product.Controllers
         
         // GET: api/Category
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAsync()
         {
             var result = await _categoryQueryService.Handle(new GetAllCategoriesQuery());
@@ -33,6 +35,7 @@ namespace Maki.Presentation.Product.Controllers
         
         // GET: api/Category/id
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAsync(int id)
         {
             var result = await _categoryQueryService.Handle(new GetCategoryByIdQuery(id));
@@ -45,7 +48,8 @@ namespace Maki.Presentation.Product.Controllers
         
         // POST: api/Category
         [HttpPost]
-        [CustomAuthorize("admin")]
+        [AllowAnonymous]
+
         public async Task<IActionResult> PostAsync([FromBody] CreateCategoryCommand command)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -57,7 +61,8 @@ namespace Maki.Presentation.Product.Controllers
         
         //PUT: api/Category/id
         [HttpPut("{id}")]
-        [CustomAuthorize("admin")]
+        [AllowAnonymous]
+
         public async Task<IActionResult> PutAsync(int id, [FromBody] UpdateCategoryCommand command)
         {
             command.Id = id;
@@ -68,7 +73,7 @@ namespace Maki.Presentation.Product.Controllers
         
         // DELETE: api/Category/id
         [HttpDelete("{id}")]
-        [CustomAuthorize("admin")]
+        [AllowAnonymous]
         public async Task<IActionResult> DeleteAsync(int id)
         {
             DeleteCategoryCommand command = new DeleteCategoryCommand { Id = id };

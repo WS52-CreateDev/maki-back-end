@@ -6766,19 +6766,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alejandra\\.nuget\\packages\\": {}
+    "C:\\Users\\Jair_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application.Test\\Maki.Application.Test.csproj",
+      "projectUniqueName": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Application.Test\\Maki.Application.Test.csproj",
       "projectName": "Maki.Application.Test",
-      "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application.Test\\Maki.Application.Test.csproj",
-      "packagesPath": "C:\\Users\\Alejandra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application.Test\\obj\\",
+      "projectPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Application.Test\\Maki.Application.Test.csproj",
+      "packagesPath": "C:\\Users\\Jair_\\.nuget\\packages\\",
+      "outputPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Application.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alejandra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jair_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -6790,17 +6790,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application\\Maki.Application.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Application\\Maki.Application.csproj"
+            "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Application\\Maki.Application.csproj": {
+              "projectPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Application\\Maki.Application.csproj"
             },
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj"
+            "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj": {
+              "projectPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Domain\\Maki.Domain.csproj"
             },
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj"
+            "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj": {
+              "projectPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Infrastructure\\Maki.Infrastructure.csproj"
             },
-            "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
-              "projectPath": "C:\\Users\\Alejandra\\Documents\\GitHub\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj"
+            "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj": {
+              "projectPath": "D:\\Open Source\\TF APP WEB\\maki-back-end\\Maki.Shared\\Maki.Shared.csproj"
             }
           }
         }
@@ -6864,7 +6864,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Alejandra\\.dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   },

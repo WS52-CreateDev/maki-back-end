@@ -14,7 +14,7 @@ public class UpdateArtisanCommand
     [Required] public int Age { get; set; }
     [Required] public string Province { get; set; }
     [Required] public string Info { get; set; }
-    [Required] public string Password { get; set; }
+    public string Password { get; set; }
     [Required] public string BusinessName { get; set; }
     [Required] public string BusinessAddress { get; set; }
 }

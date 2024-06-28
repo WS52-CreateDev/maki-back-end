@@ -6,6 +6,7 @@ using AutoMapper;
 using Maki.Domain.Artisan.Models.Commands;
 using Maki.Domain.Artisan.Models.Queries;
 using Maki.Domain.Artisan.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,6 +31,7 @@ namespace maki_backend.Artisan.Controller
         
         //Get: api/artisan/
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAsync()
         {
             var result = await _artisanQueryService.Handle(new GetAllArtisansQuery());
@@ -40,6 +42,7 @@ namespace maki_backend.Artisan.Controller
         
         //Get: api/artisan/id
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAsync(int id)
         {
             var result = await _artisanQueryService.Handle(new GetArtisanByIdQuery(id));
@@ -50,6 +53,7 @@ namespace maki_backend.Artisan.Controller
         
         //Post: api/artisan
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> PostAsync([FromBody] RegisterArtisanCommand command)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -59,6 +63,7 @@ namespace maki_backend.Artisan.Controller
 
         //Put: api/artisan/id
         [HttpPut("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> PutAsync(int id, [FromBody] UpdateArtisanCommand command)
         {
             command.Id = id;
@@ -70,6 +75,7 @@ namespace maki_backend.Artisan.Controller
         
         
         [HttpPost("login")]
+        [AllowAnonymous]
         public async Task<IActionResult> LoginAsync([FromBody] LogInArtisanCommand command)
         {
             if (!ModelState.IsValid) return BadRequest();

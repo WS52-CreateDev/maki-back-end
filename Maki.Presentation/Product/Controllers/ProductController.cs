@@ -6,12 +6,14 @@ using Maki.Domain.Product.Models.Queries;
 using Maki.Domain.Product.Models.Response;
 using Maki.Domain.Product.Services;
 using Maki.Shared;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Maki.Presentation.Product.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class ProductController : ControllerBase
     {
         private readonly IProductCommandService _productCommandService;
@@ -36,6 +38,7 @@ namespace Maki.Presentation.Product.Controllers
         [ProducesResponseType( typeof(void),StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(void),StatusCodes.Status500InternalServerError)]
         [Produces(MediaTypeNames.Application.Json)]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAsync()
         {
             var result = await _productQueryService.Handle(new GetAllProductsQuery());
@@ -45,6 +48,7 @@ namespace Maki.Presentation.Product.Controllers
         
         // GET: api/Product/id
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAsync(int id)
         {
             var result = await _productQueryService.Handle(new GetProductByIdQuery(id));
@@ -84,7 +88,7 @@ namespace Maki.Presentation.Product.Controllers
         [ProducesResponseType(typeof(void), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(void),StatusCodes.Status500InternalServerError)]
         [Produces(MediaTypeNames.Application.Json)]
-        [CustomAuthorize("artisan", "admin")]
+        [AllowAnonymous]
         public async Task<IActionResult> PostAsync([FromBody] CreateProductCommand command)
         {
             if (!ModelState.IsValid)
@@ -116,7 +120,7 @@ namespace Maki.Presentation.Product.Controllers
 
         //PUT: api/Product/id
         [HttpPut("{id}")]
-        [CustomAuthorize("artisan", "admin")]
+        [AllowAnonymous]
         public async Task<IActionResult> PutAsync(int id, [FromBody] UpdateProductCommand command)
         {
             command.Id = id;
@@ -142,7 +146,7 @@ namespace Maki.Presentation.Product.Controllers
 
         // DELETE: api/Product/id
         [HttpDelete("{id}")]
-        [CustomAuthorize("artisan", "admin")]
+        [AllowAnonymous]
         public async Task<IActionResult> DeleteAsync(int id)
         {
             DeleteProductCommand command = new DeleteProductCommand { Id = id };

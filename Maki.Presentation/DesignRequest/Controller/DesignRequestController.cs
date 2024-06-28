@@ -4,6 +4,7 @@ using Maki.Domain.DesignRequest.Models.Commands;
 using Maki.Domain.DesignRequest.Models.Queries;
 using Maki.Domain.DesignRequest.Models.Response;
 using Maki.Domain.DesignRequest.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace maki_backend.DesignRequest.Controller
@@ -35,6 +36,7 @@ namespace maki_backend.DesignRequest.Controller
         [ProducesResponseType(typeof(void), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(void), StatusCodes.Status500InternalServerError)]
         [Produces(MediaTypeNames.Application.Json)]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAsync()
         {
             var result = await _designRequestQueryService.Handle(new GetAllDesignRequestsQuery());
@@ -78,6 +80,7 @@ namespace maki_backend.DesignRequest.Controller
         [ProducesResponseType(typeof(void), StatusCodes.Status409Conflict)]
         [ProducesResponseType(typeof(void), StatusCodes.Status500InternalServerError)]
         [Produces(MediaTypeNames.Application.Json)]
+        [AllowAnonymous]
         public async Task<IActionResult> PostAsync([FromBody] CreateDesignRequestCommand command)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -89,6 +92,7 @@ namespace maki_backend.DesignRequest.Controller
 
         // PUT: api/DesignRequest/id
         [HttpPut("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> PutAsync(int id, [FromBody] UpdateDesignRequestCommand command)
         {
             command.Id = id;
@@ -99,6 +103,7 @@ namespace maki_backend.DesignRequest.Controller
 
         // DELETE: api/DesignRequest/id
         [HttpDelete("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> DeleteAsync(int id)
         {
             DeleteDesignRequestCommand command = new DeleteDesignRequestCommand { Id = id };
@@ -108,6 +113,7 @@ namespace maki_backend.DesignRequest.Controller
 
         // GET: api/DesignRequest/artisan/{artisanId}
         [HttpGet("artisan/{artisanId}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetDesignRequestsByArtisanId(int artisanId)
         {
             try

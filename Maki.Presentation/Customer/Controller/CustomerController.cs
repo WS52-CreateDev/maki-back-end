@@ -2,6 +2,7 @@
 using Maki.Domain.Customer.Models.Commands;
 using Maki.Domain.Customer.Models.Queries;
 using Maki.Domain.Customer.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace maki_backend.Customer.Controller;
@@ -21,6 +22,7 @@ public class CustomerController : ControllerBase
         _mapper = mapper;
     }
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAsync()
     {
         var result = await _customerQueryService.Handle(new GetAllCustomersQuery());
@@ -29,6 +31,7 @@ public class CustomerController : ControllerBase
     }
     // GET: api/Category/id
     [HttpGet("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAsync(int id)
     {
         var result = await _customerQueryService.Handle(new GetCustomerByIdQuery(id));
@@ -39,6 +42,7 @@ public class CustomerController : ControllerBase
         return StatusCode(StatusCodes.Status404NotFound);
     }
     [HttpPost]
+    [AllowAnonymous]
     public async Task<IActionResult> PostAsync([FromBody] RegisterCustomerCommand command)
     {
         if (!ModelState.IsValid) return BadRequest();
@@ -47,6 +51,7 @@ public class CustomerController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> PutAsync(int id, [FromBody] UpdateCustomerCommand command)
     {
         command.Id = id;
@@ -58,6 +63,7 @@ public class CustomerController : ControllerBase
         return Ok();
     }
     [HttpDelete("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> DeleteAsync(int id)
     {
         var result = await _customerCommandService.Handle(new DeleteCustomerCommand { Id = id });
@@ -65,6 +71,7 @@ public class CustomerController : ControllerBase
     }
 
     [HttpPost("login")]
+    [AllowAnonymous]
     public async Task<IActionResult> LoginAsync([FromBody] LoginCustomerCommand command)
     {
         if (!ModelState.IsValid) return BadRequest();

@@ -19,6 +19,8 @@ public class RequestToModels : Profile
         CreateMap<CreateCategoryCommand, Category>();
         CreateMap<RegisterCustomerCommand, Customer>();
         CreateMap<RegisterArtisanCommand, ArtisanA>();
+        CreateMap<UpdateArtisanCommand, ArtisanA>();
+        CreateMap<UpdateCustomerCommand, Customer>();
         CreateMap<CreateDesignRequestCommand, DesignRequest>();
     }
     
